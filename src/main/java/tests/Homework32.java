@@ -25,10 +25,10 @@ public class Homework32 extends BaseTest {
 		sa.assertTrue(shop.categoryElement.getText().contains("New releases"));
 		sa.assertTrue(shop.productElement.getText().contains("1709"));
 		
-		sa.assertNotNull(shop.imageOne);
-		sa.assertNotNull(shop.imageTwo);
-		sa.assertNotNull(shop.imageThree);
-		sa.assertNotNull(shop.imageFour);
+		sa.assertTrue(shop.imageOne.getAttribute("href").contains("TheWickedKing1.png"));
+		sa.assertTrue(shop.imageTwo.getAttribute("href").contains("TheWickedKing2.png"));
+		sa.assertTrue(shop.imageThree.getAttribute("href").contains("TheWickedKing3.png"));
+		sa.assertTrue(shop.imageFour.getAttribute("href").contains("TheWickedKing4.png"));
 		
 		sa.assertAll();
 		
